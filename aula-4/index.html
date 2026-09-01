@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>QUAL É O SEU ESTILO DE JOGO FAVORITO?</h1>
+    </header>
+
+    <main>
+        <form>
+
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>SELECIONE SEU JOGO</legend>
+
+                <label for="jogo">Jogo:</label>
+                <select name="jogo" id="jogo">
+                    <option value="valorant">Valorant</option>
+                    <option value="csgo">CSGO</option>
+                    <option value="lol">League of Legends</option>
+                    <option value="dota2">Dota 2</option>
+                    <option value="fortnite">Fortnite</option>
+                </select>
+
+                <br><br>
+
+                <label for="estilo">Estilo de jogo:</label>
+                <select name="estilo" id="estilo">
+                    <option value="agressivo">Agressivo</option>
+                    <option value="defensivo">Defensivo</option>
+                    <option value="equilibrado">Equilibrado</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Você gosta de jogar em quais consoles ou aparelhos?</legend>
+
+                <input type="checkbox" id="pc" name="console" value="pc">
+                <label for="pc">PC</label>
+
+                <br>
+
+                <input type="checkbox" id="xbox" name="console" value="xbox">
+                <label for="xbox">XBOX</label>
+
+                <br>
+
+                <input type="checkbox" id="playstation" name="console" value="playstation">
+                <label for="playstation">PLAYSTATION</label>
+
+                <br>
+
+                <input type="checkbox" id="nintendo" name="console" value="nintendo">
+                <label for="nintendo">NINTENDO</label>
+
+                <br>
+
+                <input type="checkbox" id="celular" name="console" value="celular">
+                <label for="celular">CELULAR</label>
+
+                <br>
+
+                <input type="checkbox" id="outros" name="console" value="outros">
+                <label for="outros">OUTROS:</label>
+
+                <br>
+
+                <textarea name="outros" rows="5" cols="30"
+                    placeholder="Digite outro console ou aparelho"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
