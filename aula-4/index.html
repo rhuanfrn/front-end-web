@@ -1,99 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <title>Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Estilo de Jogo</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>QUAL É O SEU ESTILO DE JOGO FAVORITO?</h1>
-    </header>
+    <div>
+        <header>
+            <h1>QUAL É O SEU ESTILO DE JOGO FAVORITO?</h1>
+        </header>
+    </div>
 
     <main>
-        <form>
 
-            <fieldset>
-                <legend>Informações pessoais</legend>
+        <div>
+            <form>
 
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <div>
+                    <fieldset>
+                        <legend>1. Informações pessoais</legend>
 
-            </fieldset>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
 
-            <br>
-
-            <fieldset>
-                <legend>SELECIONE SEU JOGO</legend>
-
-                <label for="jogo">Jogo:</label>
-                <select name="jogo" id="jogo">
-                    <option value="valorant">Valorant</option>
-                    <option value="csgo">CSGO</option>
-                    <option value="lol">League of Legends</option>
-                    <option value="dota2">Dota 2</option>
-                    <option value="fortnite">Fortnite</option>
-                </select>
-
-                <br><br>
-
-                <label for="estilo">Estilo de jogo:</label>
-                <select name="estilo" id="estilo">
-                    <option value="agressivo">Agressivo</option>
-                    <option value="defensivo">Defensivo</option>
-                    <option value="equilibrado">Equilibrado</option>
-                </select>
-
-            </fieldset>
-
-            <br>
-
-            <fieldset>
-                <legend>Você gosta de jogar em quais consoles ou aparelhos?</legend>
-
-                <input type="checkbox" id="pc" name="console" value="pc">
-                <label for="pc">PC</label>
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <input type="checkbox" id="xbox" name="console" value="xbox">
-                <label for="xbox">XBOX</label>
+                <div>
+                    <fieldset>
+                        <legend>2. Qual é o seu jogo favorito?</legend>
+
+                        <label for="jogo">Jogo:</label>
+                        <select name="jogo" id="jogo">
+                            <option value="valorant">Valorant</option>
+                            <option value="csgo">CSGO</option>
+                            <option value="lol">League of Legends</option>
+                            <option value="dota2">Dota 2</option>
+                            <option value="fortnite">Fortnite</option>
+                        </select>
+
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <input type="checkbox" id="playstation" name="console" value="playstation">
-                <label for="playstation">PLAYSTATION</label>
+                <div>
+                    <fieldset>
+                        <legend>3. Qual é o seu estilo de jogo?</legend>
+
+                        <input type="radio" id="agressivo" name="estilo" value="agressivo">
+                        <label for="agressivo">Agressivo</label>
+
+                        <br>
+
+                        <input type="radio" id="defensivo" name="estilo" value="defensivo">
+                        <label for="defensivo">Defensivo</label>
+
+                        <br>
+
+                        <input type="radio" id="equilibrado" name="estilo" value="equilibrado">
+                        <label for="equilibrado">Equilibrado</label>
+
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <input type="checkbox" id="nintendo" name="console" value="nintendo">
-                <label for="nintendo">NINTENDO</label>
+                <div>
+                    <fieldset>
+                        <legend>4. Qual plataforma você mais utiliza?</legend>
+
+                        <select name="plataforma" id="plataforma">
+                            <option value="pc">PC</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="nintendo">Nintendo</option>
+                            <option value="celular">Celular</option>
+                        </select>
+
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <input type="checkbox" id="celular" name="console" value="celular">
-                <label for="celular">CELULAR</label>
+                <div>
+                    <fieldset>
+                        <legend>5. Com que frequência você joga?</legend>
+
+                        <input type="radio" id="diariamente" name="frequencia" value="diariamente">
+                        <label for="diariamente">Todos os dias</label>
+
+                        <br>
+
+                        <input type="radio" id="semana" name="frequencia" value="semana">
+                        <label for="semana">Algumas vezes por semana</label>
+
+                        <br>
+
+                        <input type="radio" id="raramente" name="frequencia" value="raramente">
+                        <label for="raramente">Raramente</label>
+
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <input type="checkbox" id="outros" name="console" value="outros">
-                <label for="outros">OUTROS:</label>
+                <div>
+                    <fieldset>
+                        <legend>6. Você prefere jogar sozinho ou com amigos?</legend>
+
+                        <input type="radio" id="sozinho" name="grupo" value="sozinho">
+                        <label for="sozinho">Sozinho</label>
+
+                        <br>
+
+                        <input type="radio" id="amigos" name="grupo" value="amigos">
+                        <label for="amigos">Com amigos</label>
+
+                        <br>
+
+                        <input type="radio" id="tanto" name="grupo" value="tanto">
+                        <label for="tanto">Tanto faz</label>
+
+                    </fieldset>
+                </div>
 
                 <br>
 
-                <textarea name="outros" rows="5" cols="30"
-                    placeholder="Digite outro console ou aparelho"></textarea>
+                <div>
+                    <fieldset>
+                        <legend>7. Quais gêneros de jogos você gosta?</legend>
 
-            </fieldset>
+                        <input type="checkbox" id="acao" name="genero" value="acao">
+                        <label for="acao">Ação</label>
 
-            <br>
+                        <br>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+                        <input type="checkbox" id="aventura" name="genero" value="aventura">
+                        <label for="aventura">Aventura</label>
 
-        </form>
+                        <br>
+
+                        <input type="checkbox" id="esportes" name="genero" value="esportes">
+                        <label for="esportes">Esportes</label>
+
+                        <br>
+
+                        <input type="checkbox" id="estrategia" name="genero" value="estrategia">
+                        <label for="estrategia">Estratégia</label>
+
+                        <br>
+
+                        <input type="checkbox" id="terror" name="genero" value="terror">
+                        <label for="terror">Terror</label>
+
+                    </fieldset>
+                </div>
+
+                <br>
+
+                <div>
+                    <fieldset>
+                        <legend>8. Quantas horas você costuma jogar por dia?</legend>
+
+                        <input type="number" id="horas" name="horas" min="0" max="24"
+                            placeholder="Digite a quantidade de horas">
+
+                    </fieldset>
+                </div>
+
+                <br>
+
+                <div>
+                    <fieldset>
+                        <legend>9. Qual é a sua opinião sobre jogos online?</legend>
+
+                        <label for="opiniao">Conte um pouco:</label>
+                        <br>
+
+                        <textarea id="opiniao" name="opiniao" rows="5" cols="40"
+                            placeholder="Digite sua opinião"></textarea>
+
+                    </fieldset>
+                </div>
+
+                <br>
+
+                <div>
+                    <fieldset>
+                        <legend>10. Qual jogo você gostaria de experimentar?</legend>
+
+                        <label for="novo_jogo">Escolha uma opção:</label>
+
+                        <select name="novo_jogo" id="novo_jogo">
+                            <option value="minecraft">Minecraft</option>
+                            <option value="gta">GTA</option>
+                            <option value="rocket_league">Rocket League</option>
+                            <option value="overwatch">Overwatch</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
+                        <br><br>
+
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+
+                    </fieldset>
+                </div>
+
+            </form>
+        </div>
+
     </main>
 
 </body>
+
 </html>
+
+
+Esse código tem 10 questões, todas relacionadas ao tema de jogos, e exatamente 10 <div>.
