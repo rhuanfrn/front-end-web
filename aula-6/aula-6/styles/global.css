@@ -1,66 +1,197 @@
-*{
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-}
 body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: #263238;
+    background-color: #f4f7fb;
     padding: 2rem;
+    line-height: 1.5;
 }
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
 h1 {
-   text-align: center;
-   margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #172a3a;
+    letter-spacing: -0.5px;
 }
+
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
+    color: #ffffff;
 }
+
 p {
-    opacity: 0.8;
-    font-size: 0.8rem;
     margin-top: 0.5rem;
+
+    font-size: 0.9rem;
+    color: #e8f1f5;
+    opacity: 0.9;
 }
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
 section {
-    background-color: rgb(0, 162, 255);
-    padding: 1rem;
+    background-color: #2f80a8;
+
+    padding: 1.5rem;
     margin-bottom: 1.5rem;
+
+    border-radius: 0.75rem;
+    border: 2px solid #23627f;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(23, 42, 58, 0.12);
+}
+
+
+/* =========================
+   ITENS
+========================= */
+
+.item {
+    color: #ffffff;
+    background-color: #263b4a;
+
     border-radius: 0.5rem;
-    border: 0.125rem solid rgb(102, 8, 27);
-    text-align: center;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
-footer {
-    text-align: center;
+
+.item:hover {
+    background-color: #344f61;
+    transform: translateY(-2px);
 }
-.item{
-    color: crimson;
-    background-color: rgb(17, 40, 61);
-}
-.container-black .item{
+
+
+/* =========================
+   DISPLAY: BLOCK
+========================= */
+
+.container-black .item {
     display: block;
+
     height: 100px;
     margin: 0.5rem;
-}
-.container-inline .item{
-    display: inline-block;
-    width: 5rem;
-    padding: 0.5rem;
-}
-.container-flex{
+
+    padding: 1rem;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   DISPLAY: INLINE-BLOCK
+========================= */
+
+.container-inline .item {
+    display: inline-block;
+
+    width: 5rem;
+    padding: 0.75rem;
+
+    margin: 0.25rem;
+
+    text-align: center;
+}
+
+
+/* =========================
+   DISPLAY: FLEX
+========================= */
+
+.container-flex {
+    display: flex;
+
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
+
+    gap: 0.75rem;
+
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.container-flex .item{
-    padding: 0.5rem;
+
+/* =========================
+   ITENS DO FLEX
+========================= */
+
+.container-flex .item {
+    padding: 0.75rem;
+
     flex-basis: 6rem;
     flex-shrink: 1;
     flex-grow: 1;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+
+    margin-top: 2rem;
+
+    font-size: 0.85rem;
+    color: #607d8b;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .container-flex .item {
+        width: 100%;
+    }
 }
